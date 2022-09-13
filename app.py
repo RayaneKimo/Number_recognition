@@ -16,6 +16,7 @@ import numpy as np
 
 # app = Flask(__name__, static_url_path='', static_folder='frontend/build')
 app=Flask(__name__)
+
 CORS(app) #comment this on deployment
 # api = Api(app)
 svm_model = pickle.load(open('model_pkl',"rb"))
